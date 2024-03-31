@@ -36,7 +36,8 @@ $('#addToAquarium').click(function () {    //button works, click deprecated but?
 })
 
 
-//IT'S NOT REFRESHING AUTOMATICALLY :(
+//Delete - HTTP verb DELETE
+//It's not refreshing automatically :(
 function flushCreature(id) {
     console.log(`Deleting creature with ID #${id}...`);
     $.ajax(`${urlEndpoint}/${id}`, {                  //targets a specific line
